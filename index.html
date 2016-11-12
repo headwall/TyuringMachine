@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Машина Тьюринга</title>
+</head>
+<body>
+	<h1>Машина Тьюринга</h1>
+    <form action="/cgi-bin/tyuring_machine.py">
+        <h2>Введите программу:</h2>
+        <p>
+        	Программа должна быть в формате матрицы.<br>
+        	Первая строка - алфавит (через пробел)<br>
+        	Вторая и последующие строки в формате "состояние команда1 команда2 ..."<br>
+        	Например:
+        </p>
+        <pre>
+        	s0 0 1 2
+        	q1 q01L q31R q12R q30R
+        	q2 q02C q22R q10R q21R
+        	q3 q00R q22L q32C q12L
+        </pre>
+        <textarea name="program" cols="50" rows="6"></textarea><br>
+        <h2>Введите ленту:</h2>
+        <p>Через пробел</p>
+        <input type="text" name="tape"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,4 @@
+s0 0 1 2
+q1 q01L q31R q12R q30R
+q2 q02C q22R q10R q21R
+q3 q00R q22L q32C q12L
